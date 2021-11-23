@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import { test } from '../services'
+
 const title = 'benwk\'s coding'
 const author = 'benwk'
 const domain = 'https://benwk.com'
@@ -34,4 +36,13 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  const testResult = await test() || 'error'
+  return {
+    props: {
+      testResult
+    }
+  }
 }
