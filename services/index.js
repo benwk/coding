@@ -11,7 +11,7 @@ export const test = async () => {
 
   console.log(graphAPI)
 
-  const result = await request(graphAPI, query)
+  // const result = await request(graphAPI, query)
 
-  return result.test
+  // return result.test
 }
