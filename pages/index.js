@@ -8,32 +8,15 @@ const domain = 'https://benwk.com'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center py-2">
+    <div className="flex flex-col items-center justify-center w-full h-full py-2">
       <Head>
         <title>{ title }</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+      <main className="flex flex-grow bottom-0 items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <br />
           <a className="text-blue-600" href={ domain }>
             { title }
@@ -41,7 +24,7 @@ export default function Home() {
         </h1>
       </main>
 
-      <footer className="flex flex-col items-center justify-center w-full h-24 border-t">
+      <footer className="flex items-center justify-center w-full h-24 border-t">
         <div>
           Designed and built{' '}with ❤️ by{' '}
           <a className="text-blue-600 font-semibold" href="mailto:z@benwk.com">
