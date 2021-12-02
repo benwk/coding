@@ -5,8 +5,8 @@ import { Sidebar } from '.'
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex lg:flex-row sm:flex-col min-h-screen">
-      <div className="hidden sticky top-0 sm:block lg:w-1/3">
+    <div className="flex lg:flex-row sm:flex-col flex-col-reverse min-h-screen">
+      <div className="sticky sm:top-0 bottom-0 lg:w-1/3">
         {/* TODO: why sticky needs to be defined twice? */}
         <Sidebar />
       </div>
